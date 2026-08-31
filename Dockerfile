@@ -19,7 +19,6 @@ RUN pnpm install --prod
 
 FROM nginx:1.23.3 as prod
 EXPOSE 80
-
 COPY --from=builder /app/dist /usr/share/nginx/html
 CMD [ "nginx", "-g","daemon off;" ]
 
