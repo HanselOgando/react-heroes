@@ -22,6 +22,7 @@ EXPOSE 80
 COPY --from=builder /app/dist /usr/share/nginx/html
 CMD [ "nginx", "-g","daemon off;" ]
 
+
 # WORKDIR /app
 # COPY --from=prod-deps /app/node_modules ./node_moddules
 # COPY --from=builder /app/dist ./dist
