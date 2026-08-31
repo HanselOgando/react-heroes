@@ -28,7 +28,7 @@ jobs:
       run: docker build -t hanselogando/react-heroes:0.1.0 .
 
     - name: Docker push
-      run: docker push hanselogando/react-heroes:0.1.0 .
+      run: docker push hanselogando/react-heroes:0.1.0
 
 
     # - name: Build the Docker image
